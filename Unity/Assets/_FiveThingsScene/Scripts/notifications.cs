@@ -2,16 +2,29 @@
 using UnityEngine.UI;
 using System.Collections;
 
+/**
+	 * See Unity docs for API documentation 
+	 * - select an API call and press CMD + ' (or ctrl + ' on windows)
+	 * 
+	 * This class displays in game notifications after a player selects a game object, 
+	 * and keeps them up to date on how many more they need to find.
+	 */
 public class notifications : MonoBehaviour {
 
+	// Public vars are set in Editor.
 	public GameObject parent;
+	// the notification is a single object, we change its text dynamically during runtime.
 	public GameObject notification;
 	public Text notificationText;
-	// Use this for initialization
-	void Start () {
-		
-	}
 
+	/**
+	 * See Unity docs for API documentation 
+	 * - select an API call and press CMD + ' (or ctrl + ' on windows)
+	 * 
+	 * I'm using a tag system to tell me if an object has been found already or not.
+	 * This function checks the tag and displays a message if conditions are met.
+	 * After two seconds, the notification is dismissed, and the object that was selected is tagged as 'found'.
+	 */
 	public void displayNotification(){
 		if( parent.tag == "Display Objects" && parent.tag != "foundObject") {
 			
@@ -50,6 +63,7 @@ public class notifications : MonoBehaviour {
 
 	}
 
+	// Hide the notification.
 	void dismissNotification() {
 		notification.SetActive (false);
 	}

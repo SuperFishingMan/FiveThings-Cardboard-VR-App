@@ -8,9 +8,14 @@ public class objectRotator : MonoBehaviour {
 	public float rotateY = 30f;
 	public float rotateZ = 45f;
 
-	// Update is called once per frame
+	/**
+	 * See Unity docs for API documentation 
+	 * - select an API call and press CMD + ' (or ctrl + ' on windows)
+	 * 
+	 * Update runs once per frame.
+	 * Rotate the object by a specified number of degrees around its local axis every frame
+	 */
 	void Update () {
-		// rotate the object that the script is attached to
 		gameObject.transform.Rotate (new Vector3 (rotateX, rotateY, rotateZ) * Time.deltaTime, Space.Self);
 	}
 }
