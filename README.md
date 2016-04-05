@@ -16,8 +16,8 @@ Learn about the five most commonly used 3d primitives in Unity3d while exploring
 
 ## Clone and run this on your mobile device
 
-- Clone this repo and open Assets/\_FiveThingsScene in Unity 5.
-- When testing, you can move using the left mouse button while holding down the alt key.  Holding down alt will allow you to look around as well.
+- Clone this repo and open the Unity/Assets/\_FiveThingsScene in Unity 5. **Or** Download and run Android_Build.apk (requires API 23).  **Or** You can try using the XCode Project in the Unity/iOS_Build_10g folder.
+- When testing in Unity, you can move using the left mouse button while holding down the alt key.  Holding down alt will allow you to look around as well.
 - Build the project for Android or iOS.  For more info on how to do this if you are unfamiliar, check Unity's site or google.com for more information.
 
 ### Putting the app together
