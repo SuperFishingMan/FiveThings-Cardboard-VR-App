@@ -46,8 +46,7 @@ public class MovingCharacterController : MonoBehaviour
 	}
 
 	/**
-	 * @param {object} sender --> to my knowledge, this is just a convention for delegates in C#,
-	 * we are not doing anything with the sender.
+	 * @param {object} sender --> unused, conforms to delegate signature
 	 * 
 	 * If the reticle is hidden, clicking will show the reticle.
 	 */
@@ -57,8 +56,7 @@ public class MovingCharacterController : MonoBehaviour
 	}
 
 	/**
-	 * @param {object} sender --> to my knowledge, this is just a convention for delegates in C#,
-	 * we are not doing anything with the sender.
+	 * @param {object} sender --> unused, conforms to delegate signature
 	 * 
 	 * Turn moving on and off.
 	 */
@@ -84,8 +82,6 @@ public class MovingCharacterController : MonoBehaviour
 	 */
 	void Update ()
 	{
-		// If you don't need as much control over what happens when moving is toggled,
-		// you can replace this with cardboard.trigger.IsHeld() and remove ToggleMove()
 		if (moving) {
 			Vector3 movement = Camera.main.transform.forward;
 			transform.position += movement * speed * Time.deltaTime;
