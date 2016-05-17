@@ -21,7 +21,7 @@ Learn about the five most commonly used 3d primitives in Unity3d while exploring
 - Build the project for Android or iOS.  For more info on how to do this if you are unfamiliar, check Unity's site or google.com for more information.
 
 ### Putting the app together
-- Unity3d does not do a good job linking scripts when exporting packages, so there may be a little bit of fiddling required before you can test/build the app. You may not have to do all of these steps, but I would take a moment and check each of these in your scene.
+- When you load this project in Unity, the scripts may not be linked, so there may be a little bit of fiddling required before you can test/build the app. You may not have to do all of these steps, but I would take a moment and check each of these in your scene.
 
 1. In the Assets folder, open the Building Blocks folder and drag the contents into your hierarchy view.  This will populate the scene with the game assets.
 2. Inside of the Display Objects GameObject on the Hierarchy view, there are five 3d objects (Sphere, Cube, etc.).  Each should have the script "Display Info Pane" attached at the root, and an event trigger bound to 'pointer click' running displayInfoPane.displayInfo on the root object.
@@ -46,4 +46,4 @@ Learn about the five most commonly used 3d primitives in Unity3d while exploring
 
 ## Modify it!
 
-I'm sure you can do something amazing with these SDKs. To understand more about the VR mechanics, definitely study the cardboard-controls package, and the cardboard SDK from Google.
+I'm sure you can do something amazing with these SDKs and cardboard-controls. To understand more about the mechanics, definitely study the cardboard-controls package, and the cardboard SDK from Google.
